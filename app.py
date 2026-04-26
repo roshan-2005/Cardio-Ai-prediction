@@ -596,7 +596,7 @@ def patient_profile_page():
                     else:
                         return 'color: #10B981; font-weight: bold;'
                 
-                styled_df = df.style.applymap(color_risk, subset=['risk_category'])
+                styled_df = df.style.map(color_risk, subset=['risk_category'])
                 
                 st.dataframe(
                     styled_df,
