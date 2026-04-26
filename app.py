@@ -47,8 +47,8 @@ if "unique_id" not in st.session_state:
 
 # --- Load Model & Scaler ---
 try:
-    best_model = joblib.load(r"C:\Users\gamin\Documents\Internship\Finalyearproj-HDP\best_model (2).pkl")
-    scaler = joblib.load(r"C:\Users\gamin\Documents\Internship\Finalyearproj-HDP\scaler (1).pkl")
+    best_model = joblib.load("best_model (2).pkl")
+    scaler = joblib.load("scaler (1).pkl")
 except FileNotFoundError:
     st.error("Model or scaler file not found. Please ensure the files are in the correct directory.")
     st.stop()
