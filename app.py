@@ -47,10 +47,10 @@ if "unique_id" not in st.session_state:
 
 # --- Load Model & Scaler ---
 try:
-    best_model = joblib.load("best_model (2).pkl")
-    scaler = joblib.load("scaler (1).pkl")
+    best_model = joblib.load("models/model.pkl")
+    scaler = joblib.load("models/scaler.pkl")
 except FileNotFoundError:
-    st.error("Model or scaler file not found. Please ensure the files are in the correct directory.")
+    st.error("Model or scaler file not found. Please ensure the files are in the models/ directory.")
     st.stop()
 
 feature_names = ['Age', 'Gender', 'BMI', 'Chol', 'TG', 'HDL', 'LDL']

@@ -1,4 +1,8 @@
-❤️ Cardio-AI
+# ❤️ Cardio-AI
+
+### [🚀 View Live App](https://cardio-ai-prediction.streamlit.app/) <!-- Update this with your actual Streamlit Cloud URL -->
+
+![Cardio-AI Screenshot](assets/screenshot.png)
 
 AI-Powered Heart Disease Risk Prediction System
 Cardio-AI is an intelligent web application that predicts the risk of heart disease using machine learning. Built with a focus on real-world usability, it analyzes key health parameters and provides instant, actionable insights through an interactive interface.

@@ -5,15 +5,26 @@ from dotenv import load_dotenv
 import streamlit as st
 import time
 
-# ------------------- Load .env -------------------
-dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
-load_dotenv(dotenv_path)
+# ------------------- Load Database URL -------------------
+# Check if running on Streamlit Cloud (st.secrets)
+DB_URL = None
+try:
+    if "DB_URL" in st.secrets:
+        DB_URL = st.secrets["DB_URL"]
+except Exception:
+    # st.secrets might not be initialized or accessible locally
+    pass
 
-DB_URL = os.getenv("DB_URL")
 if not DB_URL:
-    st.error("ERROR: DB_URL not found in .env. Make sure your .env file exists and is correct.")
+    # Local development using .env
+    dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
+    load_dotenv(dotenv_path)
+    DB_URL = os.getenv("DB_URL")
+
+if not DB_URL:
+    st.error("ERROR: DB_URL not found in st.secrets or .env. Please configure your database connection.")
 else:
-    print("Using DB_URL:", DB_URL)  # Debug: confirm Neon URL
+    print("Database URL loaded successfully.")
 
 # ------------------- Database Manager -------------------
 class DatabaseManager:
