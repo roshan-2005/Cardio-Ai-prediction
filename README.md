@@ -1,16 +1,13 @@
 # ❤️ Cardio-AI
 
-### [🚀 View Live App](https://cardio-ai-prediction.streamlit.app/) <!-- Update this with your actual Streamlit Cloud URL -->
+### [🚀 View Live App](cardio-ai-prediction-01.streamlit.app/) 
 
-![Cardio-AI Screenshot](assets/screenshot.png)
 
 AI-Powered Heart Disease Risk Prediction System
 Cardio-AI is an intelligent web application that predicts the risk of heart disease using machine learning. Built with a focus on real-world usability, it analyzes key health parameters and provides instant, actionable insights through an interactive interface.
 
-# LINK: cardio-ai-prediction-01.streamlit.app/
 
-
-🚀 Features
+# 🚀 Features
 
 
 🧠 ML-Powered Prediction (Random Forest – 89.5% accuracy)
@@ -25,7 +22,8 @@ Cardio-AI is an intelligent web application that predicts the risk of heart dise
 
 ⚡ Real-Time Prediction & Feedback
 
-🧪 Input Parameters
+
+# 🧪 Input Parameters
 
 The model evaluates the following health metrics:
 
@@ -44,15 +42,16 @@ HDL Cholesterol
 
 LDL Cholesterol\
 
-🛠️ Tech Stack
 
-Frontend:
+# 🛠️ Tech Stack
+
+# Frontend:
 
 Streamlit
 
 HTML/CSS (custom styling)
 
-Backend & ML:
+# Backend & ML:
 
 Python
 Scikit-learn (Random Forest)
@@ -67,7 +66,7 @@ Database:
 
 MySQL
 
-🧠 How It Works
+# 🧠 How It Works
 
 
 User enters health data via UI
@@ -80,7 +79,7 @@ Results are visualized with insights
 
 Optional PDF report is generated
 
-⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
 # Clone the repository
 git clone https://github.com/your-username/cardio-ai.git
@@ -105,7 +104,7 @@ streamlit run main.py
 ├── database/  
 └── requirements.txt  
 
-📈 Model Performance
+# 📈 Model Performance
 
 Algorithm: Random Forest
 
@@ -114,7 +113,7 @@ Accuracy: 89.5%
 Optimized with feature selection & tuning
 
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
 
 Wearable device integration
