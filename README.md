@@ -1,6 +1,6 @@
 # ❤️ Cardio-AI
 
-### [🚀 View Live App](cardio-ai-prediction-01.streamlit.app/) 
+### [🚀 View Live App]( cardio-ai-prediction-01.streamlit.app/ ) 
 
 
 AI-Powered Heart Disease Risk Prediction System
